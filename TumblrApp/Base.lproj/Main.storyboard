@@ -157,25 +157,30 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="text_icon"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F6c-0i-khw">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F6c-0i-khw">
                                         <frame key="frameInset" minX="263" minY="140" width="75" height="96"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="quote_icon"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sdh-NS-yeO">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sdh-NS-yeO">
                                         <frame key="frameInset" minX="33" minY="279" width="75" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="link_icon"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K8y-aP-y1u">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K8y-aP-y1u">
                                         <frame key="frameInset" minX="150" minY="278" width="75" height="96"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="chat_icon"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ayu-a2-yWu">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ayu-a2-yWu">
                                         <frame key="frameInset" minX="263" minY="279" width="75" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="video_icon"/>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2cm-AG-kGo">
+                                        <frame key="frameInset" minX="150" minY="141" width="75" height="95"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="photo_icon"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WF6-LG-grY">
                                         <frame key="frameInset" minY="606" width="375" height="61"/>
@@ -185,18 +190,19 @@
                                             <action selector="didPressButton:" destination="9qt-t7-Qpg" eventType="touchUpInside" id="hPM-NN-q2X"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2cm-AG-kGo">
-                                        <frame key="frameInset" minX="150" minY="141" width="75" height="95"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="photo_icon"/>
-                                    </button>
                                 </subviews>
                             </view>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="backgroundView" destination="uJp-V3-0ds" id="Dmq-HJ-EDw"/>
+                        <outlet property="chatButton" destination="K8y-aP-y1u" id="v4j-nX-zWg"/>
+                        <outlet property="linkButton" destination="sdh-NS-yeO" id="upJ-IZ-x51"/>
                         <outlet property="nevermindButton" destination="WF6-LG-grY" id="L6E-tu-6XH"/>
+                        <outlet property="photoButton" destination="2cm-AG-kGo" id="tsb-dx-u4f"/>
+                        <outlet property="quoteButton" destination="F6c-0i-khw" id="5u2-VC-Zw1"/>
+                        <outlet property="textButton" destination="imI-hv-pCk" id="WHM-pd-7MA"/>
+                        <outlet property="videoButton" destination="Ayu-a2-yWu" id="gN5-ux-N4G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ly-8M-szS" userLabel="First Responder" sceneMemberID="firstResponder"/>
