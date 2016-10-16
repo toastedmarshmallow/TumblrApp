@@ -39,7 +39,31 @@ class composeViewController: UIViewController {
     
     @IBAction func didPressButton(_ sender: UIButton) {
         
-        dismiss(animated: true, completion: nil)
+        print("button press")
+        
+        UIButton.animateKeyframes(withDuration: 1.0, delay: 0.1, options: [UIViewKeyframeAnimationOptions.calculationModeCubic], animations:
+            {
+                UIButton.addKeyframe(withRelativeStartTime: 0, relativeDuration: 1/6, animations:{ self.self.photoButton.transform = CGAffineTransform(translationX: 0, y: -800)
+                    self.photoButton.alpha = 0
+                })
+                UIButton.addKeyframe(withRelativeStartTime: 1/6, relativeDuration: 1/6, animations:{ self.quoteButton.transform = CGAffineTransform(translationX: 0, y: -800)
+                    self.quoteButton.alpha = 0
+                })
+                UIButton.addKeyframe(withRelativeStartTime: 2/6, relativeDuration: 1/6, animations:{ self.chatButton.transform = CGAffineTransform(translationX: 0, y: -800)
+                    self.chatButton.alpha = 0
+                })
+                UIButton.addKeyframe(withRelativeStartTime: 3/6, relativeDuration: 1/6, animations:{ self.textButton.transform = CGAffineTransform(translationX: 0, y: -800)
+                    self.textButton.alpha = 0
+                })
+                UIButton.addKeyframe(withRelativeStartTime: 4/6, relativeDuration: 1/6, animations:{ self.linkButton.transform = CGAffineTransform(translationX: 0, y: -800)
+                    self.linkButton.alpha = 0
+                })
+                UIButton.addKeyframe(withRelativeStartTime: 5/6, relativeDuration: 1/6, animations:{ self.videoButton.transform = CGAffineTransform(translationX: 0, y: -800)
+                    self.videoButton.alpha = 0
+                })
+                
+            }, completion: {finished in self.dismiss(animated: true, completion: nil)})
+        
 
     }
     
@@ -47,8 +71,11 @@ class composeViewController: UIViewController {
         
         //For loop to go through the buttons and move them off screen
         for i in buttons{
+            i.alpha = 1
             i.transform = CGAffineTransform(translationX: 0, y: 800)
         }
+        
+        print("viewWillAppear")
         
     }
     
@@ -59,7 +86,7 @@ class composeViewController: UIViewController {
         //create type UI button
         var _: UIButton
             
-            UIButton.animateKeyframes(withDuration: 1.5, delay: 0.1, options: [UIViewKeyframeAnimationOptions.calculationModeCubic], animations:
+            UIButton.animateKeyframes(withDuration: 1.2, delay: 0.1, options: [UIViewKeyframeAnimationOptions.calculationModeCubic], animations:
                 {
                     UIButton.addKeyframe(withRelativeStartTime: 0, relativeDuration: 1/6, animations:{ self.photoButton.transform = CGAffineTransform.identity
                     })
@@ -75,6 +102,8 @@ class composeViewController: UIViewController {
                     })
                 
                 }, completion: {finished in})
+        
+          print("viewDidAppear")
         
     }
 
