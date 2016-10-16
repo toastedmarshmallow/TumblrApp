@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CBB297811DB2A47200B23559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB297801DB2A47200B23559 /* AppDelegate.swift */; };
-		CBB297831DB2A47200B23559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB297821DB2A47200B23559 /* ViewController.swift */; };
 		CBB297861DB2A47200B23559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB297841DB2A47200B23559 /* Main.storyboard */; };
 		CBB297881DB2A47200B23559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB297871DB2A47200B23559 /* Assets.xcassets */; };
 		CBB2978B1DB2A47200B23559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB297891DB2A47200B23559 /* LaunchScreen.storyboard */; };
 		CBB297961DB2A47200B23559 /* TumblrAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB297951DB2A47200B23559 /* TumblrAppTests.swift */; };
 		CBB297A11DB2A47300B23559 /* TumblrAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB297A01DB2A47300B23559 /* TumblrAppUITests.swift */; };
+		CBB297AF1DB2AB8900B23559 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB297AE1DB2AB8900B23559 /* mainViewController.swift */; };
+		CBB297B21DB2C5EA00B23559 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB297B11DB2C5EA00B23559 /* homeViewController.swift */; };
+		CBB297B41DB2C60300B23559 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB297B31DB2C60300B23559 /* searchViewController.swift */; };
+		CBB297B61DB2C60B00B23559 /* composeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB297B51DB2C60B00B23559 /* composeViewController.swift */; };
+		CBB297B81DB2C61500B23559 /* accountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB297B71DB2C61500B23559 /* accountViewController.swift */; };
+		CBB297BA1DB2C62100B23559 /* trendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB297B91DB2C62100B23559 /* trendingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		CBB2977D1DB2A47200B23559 /* TumblrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB297801DB2A47200B23559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBB297821DB2A47200B23559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBB297851DB2A47200B23559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBB297871DB2A47200B23559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB2978A1DB2A47200B23559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		CBB2979C1DB2A47300B23559 /* TumblrAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblrAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB297A01DB2A47300B23559 /* TumblrAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrAppUITests.swift; sourceTree = "<group>"; };
 		CBB297A21DB2A47300B23559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB297AE1DB2AB8900B23559 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		CBB297B11DB2C5EA00B23559 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		CBB297B31DB2C60300B23559 /* searchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = searchViewController.swift; path = ../searchViewController.swift; sourceTree = "<group>"; };
+		CBB297B51DB2C60B00B23559 /* composeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = composeViewController.swift; path = ../composeViewController.swift; sourceTree = "<group>"; };
+		CBB297B71DB2C61500B23559 /* accountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = accountViewController.swift; path = ../accountViewController.swift; sourceTree = "<group>"; };
+		CBB297B91DB2C62100B23559 /* trendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = trendingViewController.swift; path = ../trendingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				CBB297801DB2A47200B23559 /* AppDelegate.swift */,
-				CBB297821DB2A47200B23559 /* ViewController.swift */,
 				CBB297841DB2A47200B23559 /* Main.storyboard */,
+				CBB297B01DB2AB9600B23559 /* View Controllers */,
 				CBB297871DB2A47200B23559 /* Assets.xcassets */,
 				CBB297891DB2A47200B23559 /* LaunchScreen.storyboard */,
 				CBB2978C1DB2A47200B23559 /* Info.plist */,
@@ -123,6 +133,19 @@
 				CBB297A21DB2A47300B23559 /* Info.plist */,
 			);
 			path = TumblrAppUITests;
+			sourceTree = "<group>";
+		};
+		CBB297B01DB2AB9600B23559 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBB297B31DB2C60300B23559 /* searchViewController.swift */,
+				CBB297B51DB2C60B00B23559 /* composeViewController.swift */,
+				CBB297B71DB2C61500B23559 /* accountViewController.swift */,
+				CBB297B91DB2C62100B23559 /* trendingViewController.swift */,
+				CBB297AE1DB2AB8900B23559 /* mainViewController.swift */,
+				CBB297B11DB2C5EA00B23559 /* homeViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB297831DB2A47200B23559 /* ViewController.swift in Sources */,
 				CBB297811DB2A47200B23559 /* AppDelegate.swift in Sources */,
+				CBB297B21DB2C5EA00B23559 /* homeViewController.swift in Sources */,
+				CBB297B81DB2C61500B23559 /* accountViewController.swift in Sources */,
+				CBB297B61DB2C60B00B23559 /* composeViewController.swift in Sources */,
+				CBB297BA1DB2C62100B23559 /* trendingViewController.swift in Sources */,
+				CBB297B41DB2C60300B23559 /* searchViewController.swift in Sources */,
+				CBB297AF1DB2AB8900B23559 /* mainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
