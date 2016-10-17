@@ -19,6 +19,7 @@ class mainViewController: UIViewController {
     var composeViewController: UIViewController!
     var accountViewController: UIViewController!
     var trendingViewController: UIViewController!
+    var loginViewController: UIViewController!
     
     //array to hold the view controllers
     var viewControllers: [UIViewController]!
@@ -36,9 +37,10 @@ class mainViewController: UIViewController {
         composeViewController = storyboard?.instantiateViewController(withIdentifier: "ComposeViewController")
         accountViewController = storyboard?.instantiateViewController(withIdentifier: "AccountViewController")
         trendingViewController = storyboard?.instantiateViewController(withIdentifier: "TrendingViewController")
+        loginViewController = storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
         
         //Add each view controller to view controller array
-        viewControllers = [homeViewController, searchViewController, composeViewController, accountViewController, trendingViewController]
+        viewControllers = [homeViewController, searchViewController, composeViewController, accountViewController, trendingViewController, loginViewController]
         
         buttons[selectedIndex].isSelected = true
         didPressTab(buttons[selectedIndex])
