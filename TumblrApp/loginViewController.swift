@@ -10,8 +10,9 @@ import UIKit
 
 class loginViewController: UIViewController {
 
+    var fadeTransition: FadeTransition!
     @IBOutlet weak var backgroundView: UIView!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +30,23 @@ class loginViewController: UIViewController {
     @IBAction func didPressCancel(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        _ = segue.destination
+        
+        // Set the modal presentation style of your destinationViewController to be custom.
+        self.modalPresentationStyle = UIModalPresentationStyle.custom
+        
+        // Create a new instance of your fadeTransition.
+        fadeTransition = FadeTransition()
+        
+        // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
+        self.transitioningDelegate = fadeTransition
+        
+        // Adjust the transition duration. (seconds)
+        fadeTransition.duration = 1.0
+    }
+
     
     
     /*
